@@ -22,6 +22,7 @@
             <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showPetani" style="-fx-background-color: #4CAF50; -fx-font-weight: bold;" text="Data Petani" textFill="WHITE" />
             <Button layoutX="10.0" layoutY="40.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showPembeli" style="-fx-background-color: #2196F3; -fx-font-weight: bold;" text="Data Pembeli" textFill="WHITE" />
             <Button layoutX="10.0" layoutY="66.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showTransaksi" style="-fx-background-color: #FF9800; -fx-font-weight: bold;" text="Kasir/Transaksi" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showLaporan" style="-fx-background-color: #9C27B0; -fx-font-weight: bold;" text="Laporan dan Analisis" textFill="WHITE" />
             <Button layoutX="10.0" layoutY="92.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleLogout" style="-fx-background-color: #F44336;" text="LOGOUT" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
