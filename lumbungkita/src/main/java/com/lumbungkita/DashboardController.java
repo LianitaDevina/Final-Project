@@ -45,6 +45,11 @@ public class DashboardController {
          System.out.println("Menu Transaksi diklik");
     }
 
+    @FXML
+    void showLaporan(ActionEvent event) {
+        loadPage("LaporanView");
+    }
+
     // method untuk logout dan kembali ke layar login
     @FXML
     void handleLogout(ActionEvent event) throws IOException {
