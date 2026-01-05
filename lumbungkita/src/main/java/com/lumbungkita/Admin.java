@@ -1,24 +1,19 @@
 package com.lumbungkita;
 
 public class Admin {
+    // enkapsulasi atribut dengan private
     private int idAdmin;
     private String username;
     private String password;
-    // Tambahan opsional, jika di tabel database ada kolom nama_lengkap
-    // private String namaLengkap; 
 
-    // Constructor Kosong
-    public Admin() {
-    }
-
-    // Constructor Lengkap
+    // konstruktor inisialisasi semua atribut
     public Admin(int idAdmin, String username, String password) {
         this.idAdmin = idAdmin;
         this.username = username;
         this.password = password;
     }
 
-    // Getter & Setter
+    // method getter dan setter untuk setiap atribut
     public int getIdAdmin() { return idAdmin; }
     public void setIdAdmin(int idAdmin) { this.idAdmin = idAdmin; }
 
