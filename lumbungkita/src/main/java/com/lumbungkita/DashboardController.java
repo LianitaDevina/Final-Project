@@ -1,4 +1,6 @@
-package com.lumbungkita;
+package com.lumbungkita.CONTROLLER;
+
+import com.lumbungkita.App;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,12 +21,16 @@ public class DashboardController {
 
         // blok try-catch untuk memuat file FXML
         try {
-            root = FXMLLoader.load(getClass().getResource(page + ".fxml"));
+            root = FXMLLoader.load(getClass().getResource("/com/lumbungkita/" + page + ".fxml"));
         } catch (IOException e) {
             System.err.println("Gagal memuat halaman: " + page);
             e.printStackTrace();
         }
-        mainContainer.setCenter(root);
+        
+        // Cek jika root tidak null baru dipasang
+        if (root != null) {
+            mainContainer.setCenter(root);
+        }
     }
 
     // method untuk menampilkan halaman Petani
@@ -33,21 +39,27 @@ public class DashboardController {
         loadPage("PetaniView");
     }
 
-    // method untuk menampilkan halaman Produk
+    // method untuk menampilkan halaman Pembeli
     @FXML
     void showPembeli(ActionEvent event) {
-        System.out.println("Menu Pembeli diklik");
+        loadPage("PembeliView");
     }
     
-    // method untuk menampilkan halaman Produk
+    // method untuk menampilkan halaman Transaksi
     @FXML
     void showTransaksi(ActionEvent event) {
-         System.out.println("Menu Transaksi diklik");
+        loadPage("TransaksiView");
     }
 
+    // method untuk menampilkan halaman Laporan
     @FXML
     void showLaporan(ActionEvent event) {
         loadPage("LaporanView");
+    }
+        
+    @FXML
+    void showHasilPanen(ActionEvent event) {
+        loadPage("HasilPanenView");
     }
 
     // method untuk logout dan kembali ke layar login
