@@ -1,3 +1,5 @@
+package com.lumbungkita;
+
 public class Petani {
     // Atribut dibuat 'private' agar tidak bisa diakses langsung
     private int idPetani;

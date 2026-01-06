@@ -1,4 +1,5 @@
-// import untuk waktu dan tanggal
+package com.lumbungkita;
+
 import java.sql.Timestamp;
 
 public class Transaksi {

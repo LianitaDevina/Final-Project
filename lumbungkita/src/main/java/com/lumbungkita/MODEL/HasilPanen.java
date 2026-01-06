@@ -1,3 +1,5 @@
+package com.lumbungkita;
+
 public class HasilPanen {
     // enkapsulasi atribut dengan private
     private int idPanen;

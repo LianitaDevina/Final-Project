@@ -1,3 +1,5 @@
+package com.lumbungkita;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -9,7 +11,7 @@ public class DatabaseConnection {
     
     static {
         try {
-            Class.forName("mysql-connector-j-9.0.0.jar"); 
+            Class.forName("com.mysql.cj.jdbc.Driver"); 
         } catch (ClassNotFoundException e) {
             System.err.println("ERROR: MySQL JDBC Driver tidak ditemukan.");
             e.printStackTrace();

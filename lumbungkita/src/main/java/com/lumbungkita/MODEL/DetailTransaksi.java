@@ -1,3 +1,5 @@
+package com.lumbungkita;
+
 public class DetailTransaksi {
     // enkapsulasi atribut dengan private
     private int idDetailTransaksi;
